@@ -2,6 +2,11 @@ require 'spec_helper'
 
 describe PagesController do
   integrate_views
+  
+  before(:each) do
+    #Define @base_title here to prevent repeating the title in all tests
+    @base_title = 'Ruby on Rails Tutorial Sample App | '
+  end
   #Delete these examples and add some real ones
   it "should use PagesController" do
     controller.should be_an_instance_of(PagesController)
@@ -17,7 +22,7 @@ describe PagesController do
     it "should have the right title" do
       get 'home'
       response.should have_tag("title",
-                                "Ruby on Rails Tutorial Sample App | Home")
+                                 @base_title+"Home")
     end
   end
 
@@ -30,7 +35,7 @@ describe PagesController do
     it "should have the right title" do
       get 'contact'
       response.should have_tag("title",
-                                "Ruby on Rails Tutorial Sample App | Contact")
+                                @base_title+"Contact")
     end
   end
 
@@ -43,7 +48,7 @@ describe PagesController do
   it "should have the right title" do
     get 'about'
     response.should have_tag("title",
-                              "Ruby on Rails Tutorial Sample App | About")
+                              @base_title+"About")
     end
   end
   
@@ -56,7 +61,7 @@ describe PagesController do
     it "should have the right title" do
       get 'help'
       response.should have_tag("title",
-                                "Ruby on Rails Tutorial Sample App | Help")
+                                @base_title+"Help")
     end
   end
 end
