@@ -20,6 +20,13 @@ Spec::Runner.configure do |config|
   config.use_instantiated_fixtures  = false
   config.fixture_path = RAILS_ROOT + '/spec/fixtures/'
 
+#Added for webrat functionality. Webrat - Begin
+require "webrat"
+Webrat.configure do |config|
+  config.mode = :rails
+end
+#Webrat - END
+
   # == Fixtures
   #
   # You can declare fixtures for each example_group like this:
