@@ -41,6 +41,7 @@ ActionController::Routing::Routes.draw do |map|
   map.help    '/help',    :controller => 'pages', :action => 'help'
   map.root                :controller => 'pages', :action => 'home'
   map.signup '/signup',   :controller => 'users', :action => 'new'
+  map.resources           :users
   # Routes for sample_app website END
  
   # Install the default routes as the lowest priority.
