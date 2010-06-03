@@ -130,6 +130,25 @@ describe User do
       matching_user = User.authenticate(@attr[:email], @attr[:password])
       matching_user.should == @user
     end
-  end
+  end #end "authenticate method"
+  
+  describe "remember me" do
+    before (:each) do
+      @user = User.create!(@attr)
+    end
+    
+    it "should have a remember token" do
+      @user.should respond_to(:remember_token)
+    end
+    
+    it "should have a remember_me! method" do
+      @user.should respond_to(:remember_me!)
+    end
+    
+    it "should set the remember token" do
+      @user.remember_me!
+      @user.remember_token.should_not be_nil
+    end
+  end #end "remember me"
   
 end #end user 

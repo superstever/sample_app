@@ -27,6 +27,10 @@ Webrat.configure do |config|
 end
 #Webrat - END
 
+def test_sign_in(user)
+  controller.current_user = user
+end
+
   # == Fixtures
   #
   # You can declare fixtures for each example_group like this:
