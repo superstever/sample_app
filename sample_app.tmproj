@@ -2,8 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+<<<<<<< HEAD
 	<key>currentDocument</key>
 	<string>spec/models/user_spec.rb</string>
+=======
+>>>>>>> updating-users
 	<key>documents</key>
 	<array>
 		<dict>
@@ -35,6 +38,7 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+<<<<<<< HEAD
 		<key>app/controllers/users_controller.rb</key>
 		<dict>
 			<key>caret</key>
@@ -63,6 +67,8 @@
 			<key>firstVisibleLine</key>
 			<integer>56</integer>
 		</dict>
+=======
+>>>>>>> updating-users
 		<key>config/routes.rb</key>
 		<dict>
 			<key>caret</key>
@@ -78,6 +84,7 @@
 			<integer>22</integer>
 		</dict>
 		<key>public/stylesheets/custom.css</key>
+<<<<<<< HEAD
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -106,34 +113,53 @@
 			<integer>14</integer>
 		</dict>
 		<key>spec/controllers/users_controller_spec.rb</key>
+=======
+>>>>>>> updating-users
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
+<<<<<<< HEAD
 				<integer>16</integer>
 				<key>line</key>
 				<integer>278</integer>
+=======
+				<integer>18</integer>
+				<key>line</key>
+				<integer>183</integer>
+>>>>>>> updating-users
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
+<<<<<<< HEAD
 			<integer>249</integer>
+=======
+			<integer>147</integer>
+>>>>>>> updating-users
 		</dict>
-		<key>spec/models/user_spec.rb</key>
+		<key>spec/controllers/pages_controller_spec.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
+<<<<<<< HEAD
 				<integer>0</integer>
 				<key>line</key>
 				<integer>156</integer>
+=======
+				<integer>32</integer>
+				<key>line</key>
+				<integer>31</integer>
+>>>>>>> updating-users
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>14</integer>
 		</dict>
 	</dict>
+<<<<<<< HEAD
 	<key>openDocuments</key>
 	<array>
 		<string>app/models/user.rb</string>
@@ -145,5 +171,11 @@
 	<true/>
 	<key>windowFrame</key>
 	<string>{{1027, 55}, {683, 723}}</string>
+=======
+	<key>showFileHierarchyDrawer</key>
+	<true/>
+	<key>windowFrame</key>
+	<string>{{597, 55}, {683, 723}}</string>
+>>>>>>> updating-users
 </dict>
 </plist>
