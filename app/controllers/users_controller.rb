@@ -9,7 +9,8 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @title = @user.name
+    @microposts = @user.microposts.paginate(:page => params[:page])
+    @title = CGI.escapeHTML(@user.name)
   end
 
 
@@ -56,9 +57,6 @@ class UsersController < ApplicationController
   end
   
   private
-    def authenticate
-      deny_access unless signed_in?
-    end
     
     def correct_user
       @user = User.find(params[:id])
